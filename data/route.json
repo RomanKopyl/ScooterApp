@@ -1,0 +1,2130 @@
+{
+  "routes": [
+    {
+      "weight_name": "pedestrian",
+      "weight": 1674.802,
+      "duration": 1400.588,
+      "distance": 1932.173,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "annotation": {
+            "distance": [18.3, 16.7, 20.5, 1.2, 4.4, 16.7, 27.6, 8.9, 12, 8.7, 6.9, 2.6, 5.6, 16.4, 3.4, 16.5, 35.3, 3.2, 15.8, 11.6, 24.5, 24.2, 3.1, 55, 28.9, 2.6, 1.8, 4.2, 8.2, 81.3, 50.7, 12.9, 20.8, 22.9, 13.8, 27.3, 23.6, 2.4, 3.7, 40, 15.5, 14, 14.9, 14.5, 6.9, 15.4, 8.6, 4.1, 2.9, 3.3, 4.6, 3.4, 12.5, 26.1, 1, 5.4, 6.8, 137.6, 5.1, 3.7, 1.8, 1.7, 8.2, 15.9, 4, 5.2, 1.4, 7.5, 18.4, 17.2, 3.3, 0.4, 7.3, 3.3, 4.3, 1.6, 4.7, 6.3, 2.7, 21.6, 3.9, 4.3, 4.5, 1.8, 2.8, 145.8, 20.4, 10.3, 11.4, 1.2, 2.3, 3.4, 9, 10.2, 3.6, 1.6, 1.6, 9.2, 9.9, 5.8, 3.1, 12.3, 18.4, 10.7, 17.5, 27.5, 10.6, 3.2, 4.3, 5.1, 4.7, 6.3, 13.9, 28.1, 139.5, 8.9, 7.1, 15.5, 7.2, 47.6, 8.3, 7.8, 1.9, 2.7, 2.6, 1.9, 3.1, 2, 9.6, 7.8, 82.7],
+            "duration": [9.15, 8.366, 10.213, 0.637, 2.208, 13.13, 21.759, 7.011, 9.469, 5.204, 4.123, 2.845, 4.341, 9.822, 2.202, 10.459, 22.342, 1.512, 7.457, 5.465, 11.583, 14.605, 2.676, 46.851, 27.894, 2.837, 1.272, 2.935, 6.754, 61.674, 43.207, 11.833, 17.719, 19.491, 11.841, 23.254, 20.04, 2.107, 3.103, 34.097, 13.201, 11.925, 11.152, 9.695, 4.118, 9.182, 6.095, 2.871, 2.038, 3.317, 2.801, 1.979, 7.531, 15.62, 0.566, 3.853, 4.729, 87.228, 3.577, 2.62, 1.29, 1.013, 4.898, 8.982, 2.24, 3.674, 1.998, 5.255, 17.749, 18.059, 2.286, 0.335, 6.135, 5.286, 3.044, 1.137, 3.285, 5.463, 1.858, 15.247, 2.737, 4.062, 6.157, 1.271, 1.933, 93.458, 12.878, 8.171, 7.226, 0.773, 2.712, 2.513, 6.751, 9.125, 2.563, 1.141, 2.089, 6.522, 12.762, 6.875, 3.645, 7.408, 11, 6.379, 10.524, 16.45, 9.024, 2.269, 2.986, 3.591, 4.023, 3.958, 7.835, 14.835, 127.742, 6.229, 5.052, 11.693, 5.101, 33.516, 5.868, 5.775, 1.47, 1.837, 2.899, 2.331, 2.19, 0.92, 4.514, 4.403, 46.588]
+          },
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "ESP",
+              "iso_3166_1": "ES"
+            }
+          ],
+          "weight": 1674.802,
+          "duration": 1400.588,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "bearings": [138],
+                  "entry": [true],
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 0,
+                  "location": [2.178651, 41.388075]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Walk southeast on Carrer de Jaume Giralt.",
+                "bearing_after": 138,
+                "bearing_before": 0,
+                "location": [2.178651, 41.388075]
+              },
+              "name": "Carrer de Jaume Giralt",
+              "duration": 30.574,
+              "distance": 61.149,
+              "driving_side": "right",
+              "weight": 45.862,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.178651, 41.388075],
+                  [2.178799, 41.387954],
+                  [2.178916, 41.387832],
+                  [2.179053, 41.38768],
+                  [2.17904, 41.387674],
+                  [2.179073, 41.387643]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [53, 146, 235, 334],
+                  "entry": [true, true, true, false],
+                  "in": 3,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "street"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 5,
+                  "location": [2.179073, 41.387643]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Carrer de l'Arc de Sant Cristòfol.",
+                "modifier": "right",
+                "bearing_after": 235,
+                "bearing_before": 154,
+                "location": [2.179073, 41.387643]
+              },
+              "name": "Carrer de l'Arc de Sant Cristòfol",
+              "duration": 51.37,
+              "distance": 65.129,
+              "driving_side": "right",
+              "weight": 56.678,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.179073, 41.387643],
+                  [2.178909, 41.387558],
+                  [2.178632, 41.387423],
+                  [2.178672, 41.387349],
+                  [2.178747, 41.387257]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [124, 229, 330],
+                  "duration": 9.327,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "street"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 14.654,
+                  "geometry_index": 9,
+                  "location": [2.178747, 41.387257]
+                },
+                {
+                  "entry": [true, true, true, false],
+                  "in": 3,
+                  "bearings": [51, 133, 225, 304],
+                  "duration": 2.845,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "street"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 3.028,
+                  "geometry_index": 11,
+                  "location": [2.178901, 41.387178]
+                },
+                {
+                  "entry": [true, true, true, false],
+                  "in": 3,
+                  "bearings": [79, 126, 237, 313],
+                  "duration": 14.163,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "street"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 14.274,
+                  "geometry_index": 12,
+                  "location": [2.178924, 41.387162]
+                },
+                {
+                  "bearings": [127, 234, 297],
+                  "entry": [true, false, false],
+                  "in": 2,
+                  "mapbox_streets_v8": {
+                    "class": "street"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 14,
+                  "location": [2.179141, 41.387056]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Bear left onto Carrer de Fonollar.",
+                "modifier": "slight left",
+                "bearing_after": 124,
+                "bearing_before": 150,
+                "location": [2.178747, 41.387257]
+              },
+              "name": "Carrer de Fonollar",
+              "duration": 61.338,
+              "distance": 95.418,
+              "driving_side": "right",
+              "weight": 65.421,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.178747, 41.387257],
+                  [2.178833, 41.387213],
+                  [2.178901, 41.387178],
+                  [2.178924, 41.387162],
+                  [2.178966, 41.387123],
+                  [2.179141, 41.387056],
+                  [2.179174, 41.387037],
+                  [2.179333, 41.386949],
+                  [2.179704, 41.386798]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [115, 211, 298],
+                  "duration": 26.017,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 56.901,
+                  "geometry_index": 17,
+                  "location": [2.179704, 41.386798]
+                },
+                {
+                  "bearings": [33, 121, 211, 301],
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "turn_weight": 6,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 21,
+                  "location": [2.17935, 41.38638]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Carrer del Forn de la Fonda.",
+                "modifier": "right",
+                "bearing_after": 211,
+                "bearing_before": 118,
+                "location": [2.179704, 41.386798]
+              },
+              "name": "Carrer del Forn de la Fonda",
+              "duration": 40.622,
+              "distance": 79.289,
+              "driving_side": "right",
+              "weight": 77.775,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.179704, 41.386798],
+                  [2.179685, 41.386773],
+                  [2.179586, 41.386652],
+                  [2.179512, 41.386564],
+                  [2.17935, 41.38638],
+                  [2.179199, 41.386195]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [31, 115, 307],
+                  "duration": 49.527,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 61.836,
+                  "geometry_index": 22,
+                  "location": [2.179199, 41.386195]
+                },
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [39, 127, 310],
+                  "duration": 27.894,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 34.974,
+                  "geometry_index": 24,
+                  "location": [2.178641, 41.386507]
+                },
+                {
+                  "bearings": [39, 130, 211, 304],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 25,
+                  "location": [2.178377, 41.386675]
+                }
+              ],
+              "maneuver": {
+                "type": "end of road",
+                "instruction": "Turn right onto Carrer d'en Giralt el Pellisser.",
+                "modifier": "right",
+                "bearing_after": 307,
+                "bearing_before": 211,
+                "location": [2.179199, 41.386195]
+              },
+              "name": "Carrer d'en Giralt el Pellisser",
+              "duration": 84.466,
+              "distance": 95.618,
+              "driving_side": "right",
+              "weight": 104.148,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.179199, 41.386195],
+                  [2.179169, 41.386212],
+                  [2.178641, 41.386507],
+                  [2.178377, 41.386675],
+                  [2.178353, 41.38669],
+                  [2.178335, 41.386699],
+                  [2.178292, 41.386718]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "bearings": [34, 123, 224, 311],
+                  "duration": 6.754,
+                  "turn_weight": 6,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 11.634,
+                  "geometry_index": 28,
+                  "location": [2.178292, 41.386718]
+                },
+                {
+                  "bearings": [25, 131, 213, 309],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 29,
+                  "location": [2.178218, 41.386766]
+                }
+              ],
+              "maneuver": {
+                "type": "new name",
+                "instruction": "Continue on Carrer del General Álvarez de Castro.",
+                "modifier": "straight",
+                "bearing_after": 311,
+                "bearing_before": 303,
+                "location": [2.178292, 41.386718]
+              },
+              "name": "Carrer del General Álvarez de Castro",
+              "duration": 68.428,
+              "distance": 89.45,
+              "driving_side": "right",
+              "weight": 73.099,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.178292, 41.386718],
+                  [2.178218, 41.386766],
+                  [2.177459, 41.387223]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, false, true],
+                  "in": 1,
+                  "bearings": [38, 129, 222],
+                  "duration": 43.207,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 54.976,
+                  "geometry_index": 30,
+                  "location": [2.177459, 41.387223]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [42, 229, 313],
+                  "duration": 11.833,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 14.282,
+                  "geometry_index": 31,
+                  "location": [2.177055, 41.386883]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [49, 135, 231],
+                  "duration": 17.719,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 20.579,
+                  "geometry_index": 32,
+                  "location": [2.176938, 41.386807]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [51, 145, 238],
+                  "duration": 19.491,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 22.538,
+                  "geometry_index": 33,
+                  "location": [2.176745, 41.386689]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [58, 244, 322],
+                  "duration": 11.841,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 13.719,
+                  "geometry_index": 34,
+                  "location": [2.176512, 41.386581]
+                },
+                {
+                  "bearings": [64, 144, 243],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 35,
+                  "location": [2.176362, 41.386527]
+                }
+              ],
+              "maneuver": {
+                "type": "end of road",
+                "instruction": "Turn left onto Carrer de Sant Pere Més Baix.",
+                "modifier": "left",
+                "bearing_after": 222,
+                "bearing_before": 309,
+                "location": [2.177459, 41.387223]
+              },
+              "name": "Carrer de Sant Pere Més Baix",
+              "duration": 149.49,
+              "distance": 174.473,
+              "driving_side": "right",
+              "weight": 178.03,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.177459, 41.387223],
+                  [2.177055, 41.386883],
+                  [2.176938, 41.386807],
+                  [2.176745, 41.386689],
+                  [2.176512, 41.386581],
+                  [2.176362, 41.386527],
+                  [2.17607, 41.386417],
+                  [2.175843, 41.386292],
+                  [2.175819, 41.386279]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [54, 142, 234, 315],
+                  "duration": 62.325,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 76.535,
+                  "geometry_index": 38,
+                  "location": [2.175819, 41.386279]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [136, 222, 316],
+                  "duration": 11.152,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 11.197,
+                  "geometry_index": 42,
+                  "location": [2.175199, 41.386743]
+                },
+                {
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "bearings": [23, 136, 215, 316],
+                  "duration": 22.995,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 24.255,
+                  "geometry_index": 43,
+                  "location": [2.175074, 41.386839]
+                },
+                {
+                  "bearings": [138, 318],
+                  "entry": [false, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 46,
+                  "location": [2.174775, 41.387081]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Via Laietana.",
+                "modifier": "right",
+                "bearing_after": 315,
+                "bearing_before": 234,
+                "location": [2.175819, 41.386279]
+              },
+              "name": "Via Laietana",
+              "duration": 102.567,
+              "distance": 133.48,
+              "driving_side": "right",
+              "weight": 118.325,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.175819, 41.386279],
+                  [2.175788, 41.386302],
+                  [2.175449, 41.386556],
+                  [2.175316, 41.386653],
+                  [2.175199, 41.386743],
+                  [2.175074, 41.386839],
+                  [2.174952, 41.386932],
+                  [2.174897, 41.386978],
+                  [2.174775, 41.387081],
+                  [2.174706, 41.387139]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [138, 235, 320],
+                  "duration": 2.871,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 2.817,
+                  "geometry_index": 47,
+                  "location": [2.174706, 41.387139]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [55, 226],
+                  "duration": 2.038,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 2.113,
+                  "geometry_index": 48,
+                  "location": [2.174666, 41.387118]
+                },
+                {
+                  "bearings": [46, 135, 227, 314],
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 49,
+                  "location": [2.174641, 41.3871]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn left to stay on Via Laietana.",
+                "modifier": "left",
+                "bearing_after": 235,
+                "bearing_before": 318,
+                "location": [2.174706, 41.387139]
+              },
+              "name": "Via Laietana",
+              "duration": 8.226,
+              "distance": 10.261,
+              "driving_side": "right",
+              "weight": 8.042,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.174706, 41.387139],
+                  [2.174666, 41.387118],
+                  [2.174641, 41.3871],
+                  [2.174612, 41.38708]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [47, 135, 221, 312],
+                  "duration": 28.496,
+                  "traffic_signal": true,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 30.169,
+                  "geometry_index": 50,
+                  "location": [2.174612, 41.38708]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [132, 315],
+                  "duration": 3.853,
+                  "traffic_signal": true,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 3.521,
+                  "geometry_index": 55,
+                  "location": [2.174189, 41.387366]
+                },
+                {
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "bearings": [53, 135, 234, 317],
+                  "duration": 4.729,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 4.93,
+                  "geometry_index": 56,
+                  "location": [2.174143, 41.387401]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [137, 316],
+                  "duration": 87.228,
+                  "traffic_signal": true,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 87.465,
+                  "geometry_index": 57,
+                  "location": [2.174088, 41.387445]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [136, 316],
+                  "duration": 3.577,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 3.521,
+                  "geometry_index": 58,
+                  "location": [2.172947, 41.388337]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [136, 316],
+                  "duration": 2.62,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 2.817,
+                  "geometry_index": 59,
+                  "location": [2.172905, 41.38837]
+                },
+                {
+                  "entry": [true, false, false, true, true],
+                  "in": 2,
+                  "bearings": [42, 94, 136, 222, 317],
+                  "duration": 1.29,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 4,
+                  "weight": 1.408,
+                  "geometry_index": 60,
+                  "location": [2.172874, 41.388394]
+                },
+                {
+                  "bearings": [137, 318],
+                  "entry": [false, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "secondary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 61,
+                  "location": [2.172859, 41.388406]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn right to stay on Via Laietana.",
+                "modifier": "right",
+                "bearing_after": 312,
+                "bearing_before": 227,
+                "location": [2.174612, 41.38708]
+              },
+              "name": "Via Laietana",
+              "duration": 137.704,
+              "distance": 217.925,
+              "driving_side": "right",
+              "weight": 140.116,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.174612, 41.38708],
+                  [2.174566, 41.387104],
+                  [2.174538, 41.387125],
+                  [2.174429, 41.387203],
+                  [2.174197, 41.38736],
+                  [2.174189, 41.387366],
+                  [2.174143, 41.387401],
+                  [2.174088, 41.387445],
+                  [2.172947, 41.388337],
+                  [2.172905, 41.38837],
+                  [2.172874, 41.388394],
+                  [2.172859, 41.388406],
+                  [2.172845, 41.388417],
+                  [2.17278, 41.388472]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [45, 138, 220, 320],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "mapbox_streets_v8": {
+                    "class": "secondary_link"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 63,
+                  "location": [2.17278, 41.388472]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right to take the ramp.",
+                "modifier": "right",
+                "bearing_after": 45,
+                "bearing_before": 318,
+                "location": [2.17278, 41.388472]
+              },
+              "name": "Plaça d'Urquinaona",
+              "duration": 11.222,
+              "distance": 19.919,
+              "driving_side": "right",
+              "weight": 12.394,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.17278, 41.388472],
+                  [2.172914, 41.388574],
+                  [2.172948, 41.388599]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, true, false, true],
+                  "in": 2,
+                  "bearings": [45, 137, 225, 317],
+                  "duration": 3.674,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 3.521,
+                  "geometry_index": 65,
+                  "location": [2.172948, 41.388599]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [52, 137, 234, 315],
+                  "duration": 1.998,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 1.704,
+                  "geometry_index": 66,
+                  "location": [2.172905, 41.388633]
+                },
+                {
+                  "bearings": [135, 313],
+                  "entry": [false, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 67,
+                  "location": [2.172893, 41.388642]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn left to stay on Plaça d'Urquinaona.",
+                "modifier": "left",
+                "bearing_after": 317,
+                "bearing_before": 45,
+                "location": [2.172948, 41.388599]
+              },
+              "name": "Plaça d'Urquinaona",
+              "duration": 10.928,
+              "distance": 14.097,
+              "driving_side": "right",
+              "weight": 10.155,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.172948, 41.388599],
+                  [2.172905, 41.388633],
+                  [2.172893, 41.388642],
+                  [2.172828, 41.388688]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [26, 133, 220, 322],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 68,
+                  "location": [2.172828, 41.388688]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn right to stay on Plaça d'Urquinaona.",
+                "modifier": "right",
+                "bearing_after": 26,
+                "bearing_before": 313,
+                "location": [2.172828, 41.388688]
+              },
+              "name": "Plaça d'Urquinaona",
+              "duration": 17.749,
+              "distance": 18.396,
+              "driving_side": "right",
+              "weight": 21.708,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.172828, 41.388688],
+                  [2.172926, 41.388836]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [53, 206, 271],
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 69,
+                  "location": [2.172926, 41.388836]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn left to stay on Plaça d'Urquinaona.",
+                "modifier": "left",
+                "bearing_after": 271,
+                "bearing_before": 26,
+                "location": [2.172926, 41.388836]
+              },
+              "name": "Plaça d'Urquinaona",
+              "duration": 18.059,
+              "distance": 17.21,
+              "driving_side": "right",
+              "weight": 24.081,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.172926, 41.388836],
+                  [2.17272, 41.38884]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [91, 131, 155, 330],
+                  "duration": 2.621,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 7.817,
+                  "geometry_index": 70,
+                  "location": [2.17272, 41.38884]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [63, 150, 244, 330],
+                  "duration": 6.135,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 5.93,
+                  "geometry_index": 72,
+                  "location": [2.172698, 41.388869]
+                },
+                {
+                  "bearings": [63, 150, 244, 330],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "turn_weight": 3,
+                  "turn_duration": 3,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 73,
+                  "location": [2.172655, 41.388926]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Ronda de Sant Pere.",
+                "modifier": "right",
+                "bearing_after": 330,
+                "bearing_before": 271,
+                "location": [2.17272, 41.38884]
+              },
+              "name": "Ronda de Sant Pere",
+              "duration": 17.085,
+              "distance": 18.581,
+              "driving_side": "right",
+              "weight": 22.38,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.17272, 41.38884],
+                  [2.1727, 41.388865],
+                  [2.172698, 41.388869],
+                  [2.172655, 41.388926],
+                  [2.172635, 41.388951],
+                  [2.17261, 41.388985]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [53, 150, 315],
+                  "duration": 4.422,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 9.225,
+                  "geometry_index": 75,
+                  "location": [2.17261, 41.388985]
+                },
+                {
+                  "bearings": [45, 135, 221, 315],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 77,
+                  "location": [2.172557, 41.389025]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Bear left onto Plaça d'Urquinaona.",
+                "modifier": "slight left",
+                "bearing_after": 315,
+                "bearing_before": 330,
+                "location": [2.17261, 41.388985]
+              },
+              "name": "Plaça d'Urquinaona",
+              "duration": 11.743,
+              "distance": 15.255,
+              "driving_side": "right",
+              "weight": 16.563,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.17261, 41.388985],
+                  [2.172596, 41.388995],
+                  [2.172557, 41.389025],
+                  [2.172503, 41.389065],
+                  [2.172481, 41.389082]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [44, 135, 234],
+                  "duration": 15.247,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 15.493,
+                  "geometry_index": 79,
+                  "location": [2.172481, 41.389082]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [54, 229, 314],
+                  "duration": 2.737,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 2.817,
+                  "geometry_index": 80,
+                  "location": [2.17227, 41.388969]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [49, 134, 230, 315],
+                  "duration": 4.062,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 3.817,
+                  "geometry_index": 81,
+                  "location": [2.172235, 41.388946]
+                },
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [50, 134, 230, 314],
+                  "duration": 9.361,
+                  "turn_weight": 3,
+                  "turn_duration": 3,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 9.338,
+                  "geometry_index": 82,
+                  "location": [2.172195, 41.388921]
+                },
+                {
+                  "bearings": [50, 139, 242, 315],
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "turn_weight": 6,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 85,
+                  "location": [2.172112, 41.388869]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn left to stay on Plaça d'Urquinaona.",
+                "modifier": "left",
+                "bearing_after": 234,
+                "bearing_before": 315,
+                "location": [2.172481, 41.389082]
+              },
+              "name": "Plaça d'Urquinaona",
+              "duration": 137.742,
+              "distance": 205.114,
+              "driving_side": "right",
+              "weight": 142.676,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.172481, 41.389082],
+                  [2.17227, 41.388969],
+                  [2.172235, 41.388946],
+                  [2.172195, 41.388921],
+                  [2.172154, 41.388895],
+                  [2.172137, 41.388885],
+                  [2.172112, 41.388869],
+                  [2.170564, 41.388262],
+                  [2.170348, 41.388178]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [63, 153, 298],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 87,
+                  "location": [2.170348, 41.388178]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Passeig de Gràcia.",
+                "modifier": "right",
+                "bearing_after": 298,
+                "bearing_before": 243,
+                "location": [2.170348, 41.388178]
+              },
+              "name": "Passeig de Gràcia",
+              "duration": 8.171,
+              "distance": 10.359,
+              "driving_side": "right",
+              "weight": 13.282,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.170348, 41.388178],
+                  [2.170238, 41.388221]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [118, 239, 317],
+                  "duration": 8,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 8.239,
+                  "geometry_index": 88,
+                  "location": [2.170238, 41.388221]
+                },
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [59, 144, 241, 315],
+                  "duration": 11.976,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 12.197,
+                  "geometry_index": 90,
+                  "location": [2.170109, 41.388162]
+                },
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [61, 138, 241, 315],
+                  "duration": 12.828,
+                  "turn_weight": 2,
+                  "turn_duration": 2,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 12.563,
+                  "geometry_index": 93,
+                  "location": [2.169955, 41.388098]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [61, 137, 240, 317],
+                  "duration": 2.089,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 2.408,
+                  "geometry_index": 96,
+                  "location": [2.169794, 41.388031]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [60, 206],
+                  "duration": 6.522,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 11.338,
+                  "geometry_index": 97,
+                  "location": [2.169778, 41.388024]
+                },
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [26, 144, 241, 317],
+                  "duration": 23.282,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 57.532,
+                  "geometry_index": 98,
+                  "location": [2.16973, 41.387949]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [62, 173, 244],
+                  "duration": 51.76,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 54.053,
+                  "geometry_index": 101,
+                  "location": [2.169533, 41.387869]
+                },
+                {
+                  "bearings": [67, 99, 280],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 106,
+                  "location": [2.168596, 41.387539]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn left to stay on Passeig de Gràcia.",
+                "modifier": "left",
+                "bearing_after": 239,
+                "bearing_before": 298,
+                "location": [2.170238, 41.388221]
+              },
+              "name": "Passeig de Gràcia",
+              "duration": 125.482,
+              "distance": 169.293,
+              "driving_side": "right",
+              "weight": 169.11,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.170238, 41.388221],
+                  [2.170122, 41.388167],
+                  [2.170109, 41.388162],
+                  [2.170085, 41.388152],
+                  [2.17005, 41.388137],
+                  [2.169955, 41.388098],
+                  [2.169849, 41.388054],
+                  [2.169811, 41.388038],
+                  [2.169794, 41.388031],
+                  [2.169778, 41.388024],
+                  [2.16973, 41.387949],
+                  [2.169628, 41.387904],
+                  [2.169566, 41.387881],
+                  [2.169533, 41.387869],
+                  [2.1694, 41.38782],
+                  [2.169202, 41.387748],
+                  [2.169088, 41.387705],
+                  [2.168898, 41.387637],
+                  [2.168596, 41.387539],
+                  [2.168471, 41.387555]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [100, 239, 314],
+                  "duration": 2.269,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 7.113,
+                  "geometry_index": 107,
+                  "location": [2.168471, 41.387555]
+                },
+                {
+                  "entry": [false, true],
+                  "in": 0,
+                  "bearings": [59, 239],
+                  "duration": 6.577,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 11.338,
+                  "geometry_index": 108,
+                  "location": [2.168438, 41.38754]
+                },
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [59, 122, 239, 317],
+                  "duration": 7.98,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 7.972,
+                  "geometry_index": 110,
+                  "location": [2.168342, 41.387497]
+                },
+                {
+                  "bearings": [59, 216, 311],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 112,
+                  "location": [2.168229, 41.387446]
+                }
+              ],
+              "maneuver": {
+                "type": "fork",
+                "instruction": "Keep left to take Plaça de Catalunya.",
+                "modifier": "slight left",
+                "bearing_after": 239,
+                "bearing_before": 280,
+                "location": [2.168471, 41.387555]
+              },
+              "name": "Plaça de Catalunya",
+              "duration": 24.661,
+              "distance": 37.482,
+              "driving_side": "right",
+              "weight": 35.099,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.168471, 41.387555],
+                  [2.168438, 41.38754],
+                  [2.168394, 41.387521],
+                  [2.168342, 41.387497],
+                  [2.168293, 41.387475],
+                  [2.168229, 41.387446],
+                  [2.168131, 41.387345]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [36, 156, 244],
+                  "duration": 14.835,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 23.486,
+                  "geometry_index": 113,
+                  "location": [2.168131, 41.387345]
+                },
+                {
+                  "bearings": [64, 243],
+                  "entry": [false, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 114,
+                  "location": [2.167829, 41.387234]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Bear right onto Ronda de la Universitat.",
+                "modifier": "slight right",
+                "bearing_after": 244,
+                "bearing_before": 216,
+                "location": [2.168131, 41.387345]
+              },
+              "name": "Ronda de la Universitat",
+              "duration": 142.577,
+              "distance": 167.62,
+              "driving_side": "right",
+              "weight": 177.289,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.168131, 41.387345],
+                  [2.167829, 41.387234],
+                  [2.166337, 41.38667]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [63, 132, 281],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 115,
+                  "location": [2.166337, 41.38667]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Bear right onto Carrer de Balmes.",
+                "modifier": "slight right",
+                "bearing_after": 281,
+                "bearing_before": 243,
+                "location": [2.166337, 41.38667]
+              },
+              "name": "Carrer de Balmes",
+              "duration": 6.229,
+              "distance": 8.845,
+              "driving_side": "right",
+              "weight": 11.338,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.166337, 41.38667],
+                  [2.166233, 41.386685]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [101, 245, 315],
+                  "duration": 5.052,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 4.93,
+                  "geometry_index": 116,
+                  "location": [2.166233, 41.386685]
+                },
+                {
+                  "bearings": [65, 134, 246, 315],
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "turn_weight": 3,
+                  "turn_duration": 3,
+                  "traffic_signal": true,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 117,
+                  "location": [2.166155, 41.386658]
+                }
+              ],
+              "maneuver": {
+                "type": "fork",
+                "instruction": "Keep left to stay on Carrer de Balmes.",
+                "modifier": "slight left",
+                "bearing_after": 245,
+                "bearing_before": 281,
+                "location": [2.166233, 41.386685]
+              },
+              "name": "Carrer de Balmes",
+              "duration": 16.745,
+              "distance": 22.605,
+              "driving_side": "right",
+              "weight": 17.225,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.166233, 41.386685],
+                  [2.166155, 41.386658],
+                  [2.165986, 41.386602]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [66, 175, 335],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 118,
+                  "location": [2.165986, 41.386602]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn right to stay on Carrer de Balmes.",
+                "modifier": "right",
+                "bearing_after": 335,
+                "bearing_before": 246,
+                "location": [2.165986, 41.386602]
+              },
+              "name": "Carrer de Balmes",
+              "duration": 44.485,
+              "distance": 63.168,
+              "driving_side": "right",
+              "weight": 44.366,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.165986, 41.386602],
+                  [2.165982, 41.386667],
+                  [2.165576, 41.386967],
+                  [2.165478, 41.386981]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [44, 116, 252],
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "turn_weight": 5,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 121,
+                  "location": [2.165478, 41.386981]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Bear left onto Gran Via de les Corts Catalanes.",
+                "modifier": "slight left",
+                "bearing_after": 252,
+                "bearing_before": 296,
+                "location": [2.165478, 41.386981]
+              },
+              "name": "Gran Via de les Corts Catalanes",
+              "duration": 7.246,
+              "distance": 9.707,
+              "driving_side": "right",
+              "weight": 12.465,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.165478, 41.386981],
+                  [2.165387, 41.386968],
+                  [2.165371, 41.386955]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [72, 225, 310],
+                  "duration": 1.837,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 2.113,
+                  "geometry_index": 123,
+                  "location": [2.165371, 41.386955]
+                },
+                {
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "bearings": [46, 130, 224, 315],
+                  "duration": 2.899,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 3.113,
+                  "geometry_index": 124,
+                  "location": [2.165347, 41.38697]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [46, 135, 224, 315],
+                  "duration": 4.521,
+                  "turn_weight": 1,
+                  "turn_duration": 1,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 4.521,
+                  "geometry_index": 125,
+                  "location": [2.165324, 41.386987]
+                },
+                {
+                  "bearings": [135, 225, 314],
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "mapbox_streets_v8": {
+                    "class": "service"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 127,
+                  "location": [2.165282, 41.387019]
+                }
+              ],
+              "maneuver": {
+                "type": "continue",
+                "instruction": "Turn right to stay on Gran Via de les Corts Catalanes.",
+                "modifier": "right",
+                "bearing_after": 310,
+                "bearing_before": 252,
+                "location": [2.165371, 41.386955]
+              },
+              "name": "Gran Via de les Corts Catalanes",
+              "duration": 14.69,
+              "distance": 21.821,
+              "driving_side": "right",
+              "weight": 21.07,
+              "mode": "walking",
+              "geometry": {
+                "coordinates": [
+                  [2.165371, 41.386955],
+                  [2.165347, 41.38697],
+                  [2.165324, 41.386987],
+                  [2.165308, 41.386999],
+                  [2.165282, 41.387019],
+                  [2.165265, 41.387031],
+                  [2.165183, 41.387091]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [46, 134, 226, 315],
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "mapbox_streets_v8": {
+                    "class": "primary"
+                  },
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 129,
+                  "location": [2.165183, 41.387091]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn left onto Gran Via de les Corts Catalanes/C-31.",
+                "modifier": "left",
+                "bearing_after": 226,
+                "bearing_before": 314,
+                "location": [2.165183, 41.387091]
+              },
+              "name": "Gran Via de les Corts Catalanes",
+              "duration": 50.991,
+              "distance": 90.509,
+              "driving_side": "right",
+              "weight": 56.104,
+              "mode": "walking",
+              "ref": "C-31",
+              "geometry": {
+                "coordinates": [
+                  [2.165183, 41.387091],
+                  [2.165116, 41.387042],
+                  [2.164405, 41.386525]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [46],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 131,
+                  "location": [2.164405, 41.386525]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "Your destination is on the left.",
+                "modifier": "left",
+                "bearing_after": 0,
+                "bearing_before": 226,
+                "location": [2.164405, 41.386525]
+              },
+              "name": "Gran Via de les Corts Catalanes",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "walking",
+              "ref": "C-31",
+              "geometry": {
+                "coordinates": [
+                  [2.164405, 41.386525],
+                  [2.164405, 41.386525]
+                ],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 1932.173,
+          "summary": "Via Laietana, Plaça d'Urquinaona"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [2.178651, 41.388075],
+          [2.178799, 41.387954],
+          [2.178916, 41.387832],
+          [2.179053, 41.38768],
+          [2.17904, 41.387674],
+          [2.179073, 41.387643],
+          [2.178909, 41.387558],
+          [2.178632, 41.387423],
+          [2.178672, 41.387349],
+          [2.178747, 41.387257],
+          [2.178833, 41.387213],
+          [2.178901, 41.387178],
+          [2.178924, 41.387162],
+          [2.178966, 41.387123],
+          [2.179141, 41.387056],
+          [2.179174, 41.387037],
+          [2.179333, 41.386949],
+          [2.179704, 41.386798],
+          [2.179685, 41.386773],
+          [2.179586, 41.386652],
+          [2.179512, 41.386564],
+          [2.17935, 41.38638],
+          [2.179199, 41.386195],
+          [2.179169, 41.386212],
+          [2.178641, 41.386507],
+          [2.178377, 41.386675],
+          [2.178353, 41.38669],
+          [2.178335, 41.386699],
+          [2.178292, 41.386718],
+          [2.178218, 41.386766],
+          [2.177459, 41.387223],
+          [2.177055, 41.386883],
+          [2.176938, 41.386807],
+          [2.176745, 41.386689],
+          [2.176512, 41.386581],
+          [2.176362, 41.386527],
+          [2.17607, 41.386417],
+          [2.175843, 41.386292],
+          [2.175819, 41.386279],
+          [2.175788, 41.386302],
+          [2.175449, 41.386556],
+          [2.175316, 41.386653],
+          [2.175199, 41.386743],
+          [2.175074, 41.386839],
+          [2.174952, 41.386932],
+          [2.174897, 41.386978],
+          [2.174775, 41.387081],
+          [2.174706, 41.387139],
+          [2.174666, 41.387118],
+          [2.174641, 41.3871],
+          [2.174612, 41.38708],
+          [2.174566, 41.387104],
+          [2.174538, 41.387125],
+          [2.174429, 41.387203],
+          [2.174197, 41.38736],
+          [2.174189, 41.387366],
+          [2.174143, 41.387401],
+          [2.174088, 41.387445],
+          [2.172947, 41.388337],
+          [2.172905, 41.38837],
+          [2.172874, 41.388394],
+          [2.172859, 41.388406],
+          [2.172845, 41.388417],
+          [2.17278, 41.388472],
+          [2.172914, 41.388574],
+          [2.172948, 41.388599],
+          [2.172905, 41.388633],
+          [2.172893, 41.388642],
+          [2.172828, 41.388688],
+          [2.172926, 41.388836],
+          [2.17272, 41.38884],
+          [2.1727, 41.388865],
+          [2.172698, 41.388869],
+          [2.172655, 41.388926],
+          [2.172635, 41.388951],
+          [2.17261, 41.388985],
+          [2.172596, 41.388995],
+          [2.172557, 41.389025],
+          [2.172503, 41.389065],
+          [2.172481, 41.389082],
+          [2.17227, 41.388969],
+          [2.172235, 41.388946],
+          [2.172195, 41.388921],
+          [2.172154, 41.388895],
+          [2.172137, 41.388885],
+          [2.172112, 41.388869],
+          [2.170564, 41.388262],
+          [2.170348, 41.388178],
+          [2.170238, 41.388221],
+          [2.170122, 41.388167],
+          [2.170109, 41.388162],
+          [2.170085, 41.388152],
+          [2.17005, 41.388137],
+          [2.169955, 41.388098],
+          [2.169849, 41.388054],
+          [2.169811, 41.388038],
+          [2.169794, 41.388031],
+          [2.169778, 41.388024],
+          [2.16973, 41.387949],
+          [2.169628, 41.387904],
+          [2.169566, 41.387881],
+          [2.169533, 41.387869],
+          [2.1694, 41.38782],
+          [2.169202, 41.387748],
+          [2.169088, 41.387705],
+          [2.168898, 41.387637],
+          [2.168596, 41.387539],
+          [2.168471, 41.387555],
+          [2.168438, 41.38754],
+          [2.168394, 41.387521],
+          [2.168342, 41.387497],
+          [2.168293, 41.387475],
+          [2.168229, 41.387446],
+          [2.168131, 41.387345],
+          [2.167829, 41.387234],
+          [2.166337, 41.38667],
+          [2.166233, 41.386685],
+          [2.166155, 41.386658],
+          [2.165986, 41.386602],
+          [2.165982, 41.386667],
+          [2.165576, 41.386967],
+          [2.165478, 41.386981],
+          [2.165387, 41.386968],
+          [2.165371, 41.386955],
+          [2.165347, 41.38697],
+          [2.165324, 41.386987],
+          [2.165308, 41.386999],
+          [2.165282, 41.387019],
+          [2.165265, 41.387031],
+          [2.165183, 41.387091],
+          [2.165116, 41.387042],
+          [2.164405, 41.386525]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 6.221,
+      "name": "Carrer de Jaume Giralt",
+      "location": [2.178651, 41.388075]
+    },
+    {
+      "distance": 2.601,
+      "name": "Gran Via de les Corts Catalanes",
+      "location": [2.164405, 41.386525]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "h9bhUELwLReDsVuKpjrzRFK_edDq5t9q1M2q653SnThofKWWgHk6LA=="
+}
