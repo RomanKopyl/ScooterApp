@@ -14,8 +14,8 @@ interface ContextInterface {
   setSelectedScooter: (value: ScooterInterface) => void
   direction?: DirectionResponse
   directionCoordinates?: Position[]
-  routeTime?: number
-  routeDistance?: number
+  duration?: number
+  distance?: number
 }
 
 const ScooterConterxt = createContext<ContextInterface>({
@@ -50,8 +50,8 @@ export default function ScooterProvider({ children }: PropsWithChildren) {
       setSelectedScooter,
       direction,
       directionCoordinates: direction?.routes?.[0]?.geometry?.coordinates,
-      routeTime: direction?.routes?.[0]?.duration,
-      routeDistance: direction?.routes?.[0]?.distance,
+      duration: direction?.routes?.[0]?.duration,
+      distance: direction?.routes?.[0]?.distance,
     }}>
       {children}
     </ScooterConterxt.Provider>

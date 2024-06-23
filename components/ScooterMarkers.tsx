@@ -7,10 +7,7 @@ import { useScooter } from "~/providers/ScooterProvider";
 
 export default function ScooterMarkers() {
   const {
-    directionCoordinates,
     setSelectedScooter,
-    routeDistance,
-    routeTime,
   } = useScooter();
 
   const points = scooters.map(scooter => point(
