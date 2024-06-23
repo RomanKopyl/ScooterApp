@@ -1,12 +1,13 @@
+import { FontAwesome6 } from '@expo/vector-icons';
 import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { useEffect, useRef } from 'react';
-import { Button, Image, Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { scooterImage } from '~/assets';
 import { useScooter } from '~/providers/ScooterProvider';
-import { FontAwesome6 } from '@expo/vector-icons';
+import { Button } from './Button';
 
 export default function SelectedScooterSheet() {
-  const { selectedScooter, duration = 0, distance = 0 } = useScooter();
+  const { selectedScooter, duration = 0, distance = 0, isNearby } = useScooter();
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   useEffect(() => {
@@ -64,7 +65,7 @@ export default function SelectedScooterSheet() {
           </View>
           {/* Bottom part */}
           <View>
-            <Button title="Start journey" />
+            <Button title="Start journey" disabled={!isNearby} />
           </View>
         </BottomSheetView>
       )}
