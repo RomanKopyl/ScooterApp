@@ -3,15 +3,20 @@ import getDistance from '@turf/distance';
 import { point } from '@turf/helpers';
 import * as Location from 'expo-location';
 import { PropsWithChildren, createContext, useContext, useEffect, useState } from "react";
+import { Alert } from 'react-native';
+import { supabase } from '~/lib/supabase';
 import { DirectionResponse, getDirections } from '~/services/directions';
 
 interface ScooterInterface {
   id: string
   lat: number
   long: number
+  battery?: 0,
+  dist_meters?: number
 }
 
 interface ContextInterface {
+  nearbyScooters: ScooterInterface[]
   selectedScooter?: ScooterInterface
   setSelectedScooter: (value: ScooterInterface) => void
   direction?: DirectionResponse
@@ -22,13 +27,35 @@ interface ContextInterface {
 }
 
 const ScooterConterxt = createContext<ContextInterface>({
+  nearbyScooters: [],
   setSelectedScooter: () => { }
 });
 
 export default function ScooterProvider({ children }: PropsWithChildren) {
+  const [nearbyScooters, setNearbyScooters] = useState([]);
   const [selectedScooter, setSelectedScooter] = useState<ScooterInterface | undefined>();
   const [direction, setDirection] = useState<DirectionResponse>();
   const [isNearby, setIsNearby] = useState(false);
+
+  useEffect(() => {
+    const fetchScooters = async () => {
+      const location = await Location.getCurrentPositionAsync();
+      const { error, data } = await supabase.rpc('nearby_scooters', {
+        lat: location.coords.latitude,
+        long: location.coords.longitude,
+        max_dist_meters: 1000,
+      });
+
+      if (error) {
+        Alert.alert('Failed to fetch scooters');
+      } else {
+        setNearbyScooters(data);
+      }
+    };
+
+    fetchScooters();
+  }, []);
+
 
   useEffect(() => {
     let subscription: Location.LocationSubscription | undefined;
@@ -74,6 +101,7 @@ export default function ScooterProvider({ children }: PropsWithChildren) {
 
   return (
     <ScooterConterxt.Provider value={{
+      nearbyScooters,
       selectedScooter,
       setSelectedScooter,
       direction,

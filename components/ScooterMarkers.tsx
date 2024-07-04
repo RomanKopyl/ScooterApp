@@ -2,15 +2,15 @@ import { CircleLayer, Images, ShapeSource, SymbolLayer } from "@rnmapbox/maps";
 import { OnPressEvent } from "@rnmapbox/maps/lib/typescript/src/types/OnPressEvent";
 import { featureCollection, point } from '@turf/helpers';
 import { pin } from "~/assets";
-import scooters from '~/data/scooter.json';
 import { useScooter } from "~/providers/ScooterProvider";
 
 export default function ScooterMarkers() {
   const {
+    nearbyScooters,
     setSelectedScooter,
   } = useScooter();
 
-  const points = scooters.map(scooter => point(
+  const points = nearbyScooters.map(scooter => point(
     [scooter.long, scooter.lat],
     { scooter }
   ));
