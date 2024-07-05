@@ -3,12 +3,14 @@ import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { useEffect, useRef } from 'react';
 import { Image, Text, View } from 'react-native';
 import { scooterImage } from '~/assets';
+import { useRide } from '~/providers/RideProvider';
 import { useScooter } from '~/providers/ScooterProvider';
 import { Button } from './Button';
 
 export default function SelectedScooterSheet() {
   const { selectedScooter, duration = 0, distance = 0, isNearby } = useScooter();
   const bottomSheetRef = useRef<BottomSheet>(null);
+  const { startRide, isLoading } = useRide();
 
   useEffect(() => {
     if (selectedScooter) {
@@ -16,6 +18,12 @@ export default function SelectedScooterSheet() {
     }
   }, [selectedScooter]);
 
+
+  const startJourney = async () => {
+    if (!selectedScooter?.id) return;
+
+    startRide(selectedScooter?.id);
+  }
 
   return (
     <BottomSheet
@@ -65,7 +73,11 @@ export default function SelectedScooterSheet() {
           </View>
           {/* Bottom part */}
           <View>
-            <Button title="Start journey" disabled={!isNearby} />
+            <Button
+              title="Start journey"
+              onPress={startJourney}
+              disabled={!isNearby || isLoading}
+              isLoading={isLoading} />
           </View>
         </BottomSheetView>
       )}

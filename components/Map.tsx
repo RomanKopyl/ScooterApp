@@ -13,7 +13,7 @@ export default function Map() {
       style={{ flex: 1 }}
       styleURL='mapbox://styles/mapbox/dark-v11'
     >
-      <Camera followZoomLevel={13} followUserLocation />
+      <Camera followZoomLevel={14} followUserLocation />
 
       <LocationPuck
         puckBearingEnabled

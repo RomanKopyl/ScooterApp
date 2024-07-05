@@ -8,7 +8,7 @@ import { supabase } from '~/lib/supabase';
 import { DirectionResponse, getDirections } from '~/services/directions';
 
 interface ScooterInterface {
-  id: string
+  id: number
   lat: number
   long: number
   battery?: 0,
@@ -43,7 +43,7 @@ export default function ScooterProvider({ children }: PropsWithChildren) {
       const { error, data } = await supabase.rpc('nearby_scooters', {
         lat: location.coords.latitude,
         long: location.coords.longitude,
-        max_dist_meters: 1000,
+        max_dist_meters: 2000,
       });
 
       if (error) {
@@ -66,7 +66,7 @@ export default function ScooterProvider({ children }: PropsWithChildren) {
           const from = point([newLocation.coords.longitude, newLocation.coords.latitude]);
           const to = point([selectedScooter.long, selectedScooter.lat]);
           const distance = getDistance(from, to, { units: 'meters' });
-          if (distance < 200) {
+          if (distance < 500) {
             setIsNearby(true);
           }
         });

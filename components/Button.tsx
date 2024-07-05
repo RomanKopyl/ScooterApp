@@ -1,13 +1,14 @@
 import { forwardRef } from 'react';
-import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
 type ButtonProps = {
   onPress?: TouchableOpacityProps['onPress'];
   title?: string;
+  isLoading?: boolean
 } & TouchableOpacityProps;
 
 export const Button = forwardRef<TouchableOpacity, ButtonProps>(
-  ({ onPress, title, ...otherProps }, ref) => {
+  ({ onPress, title, isLoading = false, ...otherProps }, ref) => {
     return (
       <TouchableOpacity
         ref={ref}
@@ -15,6 +16,7 @@ export const Button = forwardRef<TouchableOpacity, ButtonProps>(
         onPress={onPress}
         {...otherProps}>
         <Text style={styles.buttonText}>{title}</Text>
+        {isLoading && <ActivityIndicator color={'white'} style={styles.activityIndicator} />}
       </TouchableOpacity>
     );
   }
@@ -42,5 +44,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     textAlign: 'center',
+  },
+  activityIndicator: {
+    position: 'absolute',
+    right: 20,
   },
 });
