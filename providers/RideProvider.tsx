@@ -1,7 +1,10 @@
+import { Position } from '@rnmapbox/maps/lib/typescript/src/types/Position';
+import * as Location from 'expo-location';
 import { PropsWithChildren, createContext, useContext, useEffect, useState } from "react";
 import { Alert } from "react-native";
 import { supabase } from "~/lib/supabase";
 import { useAuth } from "./AuthProvider";
+import { fetchDirectionBasedOnCoords } from '~/services/directions';
 
 export interface Ride {
   id: number
@@ -13,6 +16,7 @@ export interface Ride {
 
 type RideContextType = {
   ride?: Ride
+  rideRoute: Position[]
   isLoading: boolean
   startRide: (rideId: number) => void
   finishRide: () => void,
@@ -20,6 +24,7 @@ type RideContextType = {
 
 const RideContext = createContext<RideContextType>({
   ride: undefined,
+  rideRoute: [],
   isLoading: false,
   startRide: (scooterId: number) => { },
   finishRide: () => { },
@@ -28,9 +33,11 @@ const RideContext = createContext<RideContextType>({
 export default function RideProvider({ children }: PropsWithChildren) {
   const [ride, setRide] = useState<Ride | undefined>();
   const [isLoading, setIsLoading] = useState(false);
+  const [rideRoute, setRideRoute] = useState<Position[]>([]);
 
   const { userId } = useAuth();
 
+  // Fetch active ride if it exist
   useEffect(() => {
     const fetchActiveRide = async () => {
       const { data, error } = await supabase
@@ -41,6 +48,9 @@ export default function RideProvider({ children }: PropsWithChildren) {
         .limit(1)
         .single();
 
+      // ERROR 
+      // "code": "PGRST116", 
+      // "details": "The result contains 0 rows"
       if (error && error.code !== 'PGRST116') {
         console.log('ERROR', error);
 
@@ -54,7 +64,38 @@ export default function RideProvider({ children }: PropsWithChildren) {
     };
 
     fetchActiveRide();
-  }, [])
+  }, []);
+
+  useEffect(() => {
+    let subscription: Location.LocationSubscription | undefined;
+
+    if (ride) {
+      const watchLocation = async () => {
+        subscription = await Location.watchPositionAsync({ distanceInterval: 10 }, (newLocation) => {
+          console.log('New location: ', newLocation.coords.longitude, newLocation.coords.latitude);
+          setRideRoute(currRoute => [
+            ...currRoute,
+            [newLocation.coords.longitude, newLocation.coords.latitude],
+          ]);
+          // const from = point([newLocation.coords.longitude, newLocation.coords.latitude]);
+          // const to = point([selectedScooter.long, selectedScooter.lat]);
+          // const distance = getDistance(from, to, { units: 'meters' });
+          // if (distance < 500) {
+          //   setIsNearby(true);
+
+          // }
+        });
+      };
+
+      watchLocation();
+    }
+
+    // unsubscribe
+    return () => {
+      subscription?.remove();
+    };
+  }, [ride]);
+
 
   const startRide = async (scooterId: number) => {
     if (ride) {
@@ -87,10 +128,20 @@ export default function RideProvider({ children }: PropsWithChildren) {
       return;
     }
 
+    const actualRoute = await fetchDirectionBasedOnCoords(rideRoute);
+    const rideRouteCoords = actualRoute.matchings[0].geometry.coordinates;
+    const rideRouteDuration = actualRoute.matchings[0].duration;
+    const rideRouteDistance = actualRoute.matchings[0].distance;
+    setRideRoute(actualRoute.matchings[0].geometry.coordinates);
+
+
     const { error } = await supabase
       .from('rides')
       .update({
         finished_at: new Date(),
+        routeDuration: rideRouteDuration,
+        routeDistance: rideRouteDistance,
+        routeCoords: rideRouteCoords,
       })
       .eq('id', ride?.id);
 
@@ -107,6 +158,7 @@ export default function RideProvider({ children }: PropsWithChildren) {
   return (
     <RideContext.Provider value={{
       ride,
+      rideRoute,
       isLoading,
       startRide,
       finishRide,
