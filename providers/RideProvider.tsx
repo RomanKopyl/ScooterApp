@@ -76,7 +76,6 @@ export default function RideProvider({ children }: PropsWithChildren) {
     if (error) {
       Alert.alert("Failed to start the ride");
     } else {
-      console.warn('Ride started');
       const currentRide = data[0] as Ride | undefined;
       setRide(currentRide);
     }

@@ -8,13 +8,21 @@ import { useScooter } from '~/providers/ScooterProvider';
 import { Button } from './Button';
 
 export default function SelectedScooterSheet() {
-  const { selectedScooter, duration = 0, distance = 0, isNearby } = useScooter();
+  const {
+    selectedScooter,
+    duration = 0,
+    distance = 0,
+    isNearby,
+    setSelectedScooter,
+  } = useScooter();
   const bottomSheetRef = useRef<BottomSheet>(null);
   const { startRide, isLoading } = useRide();
 
   useEffect(() => {
     if (selectedScooter) {
       bottomSheetRef.current?.expand();
+    } else {
+      bottomSheetRef.current?.close();
     }
   }, [selectedScooter]);
 
@@ -23,6 +31,7 @@ export default function SelectedScooterSheet() {
     if (!selectedScooter?.id) return;
 
     startRide(selectedScooter?.id);
+    setSelectedScooter(undefined);
   }
 
   return (
@@ -31,6 +40,7 @@ export default function SelectedScooterSheet() {
       index={-1}
       snapPoints={[200]}
       enablePanDownToClose
+      onClose={() => setSelectedScooter(undefined)}
       backgroundStyle={{ backgroundColor: '#414442' }}
     >
       {selectedScooter && (

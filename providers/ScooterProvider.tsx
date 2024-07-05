@@ -18,7 +18,7 @@ interface ScooterInterface {
 interface ContextInterface {
   nearbyScooters: ScooterInterface[]
   selectedScooter?: ScooterInterface
-  setSelectedScooter: (value: ScooterInterface) => void
+  setSelectedScooter: (value?: ScooterInterface) => void
   direction?: DirectionResponse
   directionCoordinates?: Position[]
   duration?: number
@@ -96,6 +96,10 @@ export default function ScooterProvider({ children }: PropsWithChildren) {
 
     if (selectedScooter) {
       fetchDirections();
+      setIsNearby(false);
+    } else {
+      setDirection(undefined);
+      setIsNearby(false);
     }
   }, [selectedScooter])
 

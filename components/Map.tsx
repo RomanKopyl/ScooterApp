@@ -2,11 +2,15 @@ import Mapbox, { Camera, LocationPuck, MapView } from '@rnmapbox/maps';
 import { useScooter } from '~/providers/ScooterProvider';
 import LineRoute from './LineRoute';
 import ScooterMarkers from './ScooterMarkers';
+import { useRide } from '~/providers/RideProvider';
 
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_KEY ?? '');
 
 export default function Map() {
   const { directionCoordinates } = useScooter();
+  const { ride } = useRide();
+
+  const showMarkers = !ride;
 
   return (
     <MapView
@@ -21,9 +25,13 @@ export default function Map() {
         pulsing={{ isEnabled: true }}
       />
 
-      <ScooterMarkers />
-
-      {directionCoordinates && <LineRoute coordinates={directionCoordinates} />}
+      {
+        showMarkers &&
+        <>
+          <ScooterMarkers />
+          {directionCoordinates && <LineRoute coordinates={directionCoordinates} />}
+        </>
+      }
     </MapView >
   );
 }
